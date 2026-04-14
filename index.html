@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>I am sorry..</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button id="musicBtn">🔊</button>
+  <div id="stars"></div>
+  <div class="emoji moon">🌙</div>
+  <div class="emoji heart">💙</div>
+  <div class="emoji spark">✨</div>
+  <div class="emoji flower">🌸</div>
+  <!-- ✅ ONLY ONE AUDIO -->
+  <audio id="song" src="song.mp3" loop></audio>
+
+  <!-- PAGE 1 -->
+  <div class="container">
+    <img src="gifs/bear1.gif" class="gif">
+
+    <p class="line">
+      I know… it’s already too late…
+    </p>
+
+    <p class="line">
+      Maybe you don’t even want to talk to me anymore…
+    </p>
+
+    <p class="line">
+      And I understand why…
+    </p>
+
+    <p class="line">
+      But please… just this once…
+      can you listen to me…? 🥺
+    </p>
+
+    <button id="nextBtn">Let me talk… </button>
+  </div>
+
+  <!-- PAGE 2 (LETTER) -->
+  <div id="letterPage" class="hidden page">
+    <div class="letter">
+
+      <h2 class="letter-title">A letter for you… 💌</h2>
+
+      <img src="gifs/bear2.gif" class="letter-gif">
+
+      <h2>I'm Sorry 🥺</h2>
+
+      <p>
+        I know I’ve made so many mistakes…
+      </p>
+
+      <p>
+        And honestly… I don’t even have the right words
+        to explain or fix everything I’ve done…
+      </p>
+
+      <button id="continueBtn">Continue Reading 💌</button>
+
+    </div>
+  </div>
+  <!-- PAGE 3 -->
+  <div id="page3" class="hidden page">
+    <div class="page3-box">
+
+      <!-- GIF -->
+      <img src="gifs/bear3.gif" class="page3-gif">
+
+      <!-- TEXT -->
+      <p id="page3Text"></p>
+
+      <!-- BUTTON -->
+      <button id="readLetterBtn" class="hidden">Read my letter 💌</button>
+    </div>
+  </div>
+  <!-- PAGE 4 -->
+  <div id="page4" class="hidden page">
+    <div class="page4-container">
+
+      <!-- TOP TEXT -->
+      <h2 class="page4-title">I've been staring at these all night... 🌙</h2>
+
+      <!-- IMAGE CARDS -->
+      <div class="cards">
+
+        <div class="card">
+          <img src="images/image.jpg">
+        </div>
+
+        <div class="card">
+          <img src="images/image.jpg">
+        </div>
+
+        <div class="card">
+          <img src="images/image.jpg">
+        </div>
+
+      </div>
+
+      <!-- LETTER -->
+      <div class="page4-text">
+
+        <h2 class="page4-title">Look at these… 🥺</h2>
+
+        <div class="page4-text">
+
+          <p>
+            Just look at these moments…
+            how happy we were together… 💫
+          </p>
+
+          <p>
+            These aren’t just pictures…
+            they’re pieces of my life
+            that I never want to lose…
+          </p>
+
+          <p>
+            They’re so precious to me…
+            and I don’t want them to become
+            just memories because of my mistakes… 💔
+          </p>
+
+          <p>
+            I still want to create more moments with you…
+            more smiles… more memories… more “us”… 💙
+          </p>
+
+          <p class="final-line">
+            Please don’t let this be the end of our story… 🥺
+          </p>
+
+        </div>
+      </div>
+      <button id="needYouBtn">I need you 💙</button>
+    </div>
+  </div>
+  <!-- PAGE 5 -->
+
+
+  <div id="page5" class="hidden page">
+    <div class="page5-box">
+
+      <!-- GIF -->
+      <img src="gifs/bear5.gif" class="page5-gif">
+
+      <!-- TEXT -->
+      <h2 class="page5-text">I still need you… 🥺</h2>
+
+      <p class="page5-subtext">
+        I tried to stay strong without you…<br>
+        but every little thing reminds me of us…<br>
+        and honestly… it still hurts 💔<br>
+
+        I don’t want perfect…<br>
+        I just want you…💙
+      </p>
+      <button id="sorryBtn">I need to say this… 🥺</button>
+    </div>
+  </div>
+  <div id="page6" class="hidden page">
+    <div class="page6-box">
+
+      <!-- GIF -->
+      <img src="gifs/bear6.gif" class="page6-gif">
+
+      <!-- TEXT -->
+      <h2 class="page6-text">I’m really sorry… 🥺</h2>
+
+      <p class="page6-subtext">
+        I know… what I did isn’t even something <br>
+        that can be fixed with just a “sorry”…<br>
+
+        but still… I’m truly sorry… 💔<br>
+
+        I tried to live without you…<br>
+        I really did…<br>
+        but I couldn’t…<br>
+
+        Nothing feels right without you…<br>
+
+        I promise… from now on…<br>
+        I’ll never repeat those mistakes again…<br>
+
+        I just hope…<br>
+        somewhere in your heart…<br>
+        you’ve found a way to forgive me… 💙<br>
+      </p>
+      <div class="page6-buttons">
+        <button id="yesBtn">Yes… I forgive you 💙</button>
+      </div>
+    </div>
+  </div>
+  <div id="page7" class="hidden page">
+    <div class="page7-box">
+
+      <img src="gifs/bear7.gif" class="page3-gif">
+
+      <p class="page7-text">
+        Thank you… for forgiving me 💙<br><br>
+
+        I know I made mistakes…<br>
+        but I promise, I’ll never hurt you like that again…<br><br>
+
+        And… I have something for you… 🎁
+      </p>
+
+      <button id="giftBtn">click to see..</button>
+
+    </div>
+  </div>
+  <div id="page8" class="hidden page">
+    <div class="gift-container">
+
+      <h2 class="gift-title">I have something for you… 💙</h2>
+
+      <!-- 🎁 GIFT BOX -->
+      <img src="gifs/gift3.gif" id="giftBox" class="gift-img">
+
+      <p class="gift-text">Click to open ✨</p>
+
+    </div>
+  </div>
+  <div id="page9" class="hidden page">
+    <div class="final-container">
+
+      <!-- 🌹 GIF -->
+      <img src="gifs/bear10.gif" class="final-gif">
+
+      <!-- 💙 TEXT -->
+      <p class="final-text">
+        This flower is for you… 🌹<br><br>
+
+        Not because it’s special…<br>
+        but because YOU are… 💙<br><br>
+
+        You mean more to me than I can ever explain…<br>
+        more than words… more than anything… 🥺<br><br>
+
+        In my world… it’s always you…<br>
+        just you… and only you… 💫
+      </p>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
