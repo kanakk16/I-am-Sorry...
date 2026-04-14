@@ -698,6 +698,11 @@ button:hover {
   transform: rotate(0deg);
   }
 
+  .card img {
+  height: 100px;
+  object-fit: cover;
+}
+
   /* BUTTONS */
   button {
     font-size: 16px;
