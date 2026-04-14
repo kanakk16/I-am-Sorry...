@@ -314,16 +314,7 @@ p {
   transition: 0.4s;
 }
 
-/* ✨ HOVER EFFECT */
-.card:hover {
-  transform: scale(1.1) rotate(0deg);
-  box-shadow: 0 0 30px rgba(255, 200, 255, 0.5);
-}
 
-/* ✨ IMAGE ZOOM */
-.card:hover img {
-  transform: scale(1.1);
-}
 
 
 
