@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let container = document.querySelector(".container");
   let letterPage = document.getElementById("letterPage");
 
-  // ⭐ stars
   let starsContainer = document.getElementById("stars");
 
   for (let i = 0; i < 120; i++) {
@@ -21,22 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
     star.style.top = Math.random() * 100 + "%";
     star.style.left = Math.random() * 100 + "%";
 
-    // ⭐ ADD THIS (random delay)
     star.style.animationDelay = Math.random() * 5 + "s";
 
-    // ⭐ ADD THIS (random speed)
     star.style.animationDuration = (Math.random() * 3 + 2) + "s";
 
     starsContainer.appendChild(star);
   }
 
-  // 👉 PAGE 1 → LETTER
+
   btn.onclick = function () {
     song.play().catch(() => { });
     goToNext(container, letterPage);
   };
 
-  // 👉 LETTER → PAGE 3
+
   continueBtn.onclick = function () {
     let page3 = document.getElementById("page3");
 
@@ -46,14 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
       startPage3Animation();
     }, 1000);
   };
-  // 👉 PAGE 3 ANIMATION
+
   function startPage3Animation() {
 
     let lines = [
       "But please believe me..",
-      "I wish I could fix everything… 💔",
+      "I wish I could fix everything…",
       "I never meant to lose you…",
-      "You still mean everything to me… 🥺"
+      "You still mean everything to me…🥺"
     ];
 
     let index = 0;
@@ -82,18 +79,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function goToNext(currentPage, nextPage) {
 
-    // 👉 exit animation
     currentPage.classList.add("exit-up");
 
     setTimeout(() => {
 
-      // 👉 hide current
       currentPage.style.display = "none";
 
-      // 👉 2 sec wait
       setTimeout(() => {
 
-        // 👉 show next normally
         nextPage.classList.remove("hidden");
 
       }, 1000);
@@ -142,13 +135,11 @@ document.addEventListener("DOMContentLoaded", function () {
       let page6 = document.getElementById("page6");
       let page7 = document.getElementById("page7");
 
-      // 👉 smooth exit
       page6.classList.add("exit-up");
 
       setTimeout(() => {
         page6.style.display = "none";
 
-        // 👉 thoda gap (smooth feel)
         setTimeout(() => {
           page7.classList.remove("hidden");
         }, 1000);
@@ -178,17 +169,17 @@ document.addEventListener("DOMContentLoaded", function () {
       goToNext(page8, page9);
     };
   }
-  // 🎵 MUSIC TOGGLE
+
   if (musicBtn && song) {
     musicBtn.onclick = function () {
 
       if (song.muted) {
-        // 🔊 UNMUTE
+
         song.muted = false;
         musicBtn.innerHTML = "🔊";
         musicBtn.classList.remove("muted");
       } else {
-        // 🔇 MUTE
+
         song.muted = true;
         musicBtn.innerHTML = "🔇";
         musicBtn.classList.add("muted");
