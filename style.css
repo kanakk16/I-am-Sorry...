@@ -703,8 +703,8 @@ button:hover {
 }
 
   .card {
-    width: 95%;
-    transform: rotate(0deg);
+     width: 30%;   /* 👈 3 images ek line me fit */
+  transform: rotate(0deg);
   }
 
   /* BUTTONS */
