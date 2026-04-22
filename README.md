@@ -42,7 +42,7 @@ Sometimes words alone are not enough — this experience aims to make emotions f
 
 ## 🚀 Live Preview
 
-🔗 [https://your-live-link-here.com  ](https://kanakk16.github.io/Velvet-Glow-Salon/)
+🔗(https://kanakk16.github.io/I-am-Sorry.../)
 
 ---
 
